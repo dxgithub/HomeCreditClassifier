@@ -44,24 +44,20 @@ predic_test=predic_test.dropna()
 clf_knn =joblib.load('./Model/clf_knn.pkl')
 submission(clf_knn,predic_test,'./Data/clf_knn_predict.csv')
 
-'''
 clf_lg1=joblib.load('./Model/clf_lg1.pkl')
-submission(clf_lg1,predic_test,'./Data/clf_clf_lg1_predict.csv')
-'''
+submission(clf_lg1,predic_test,'./Data/clf_lg1_predict.csv')
+
 clf_rfc1=joblib.load('./Model/clf_rfc1.pkl')
 submission(clf_rfc1,predic_test,'./Data/clf_rfc1_predict.csv')
 
-clf_rfc2=joblib.load('./Model/clf_rfc2.pkl')
-submission(clf_rfc2,predic_test,'./Data/clf_rfc2_predict.csv')
-
-clf_svr=joblib.load('./Model/clf_svr.pkl')
-submission(clf_svr,predic_test,'./Data/clf_svr_predict.csv')
+clf_svc=joblib.load('./Model/clf_svc.pkl')
+submission(clf_svc,predic_test,'./Data/clf_svc_predict.csv')
 
 clf_xgb1=joblib.load('./Model/clf_xgb1.pkl')
 submission(clf_xgb1,predic_test,'./Data/clf_xgb1_predict.csv')
 
-reg_xgb=joblib.load('./Model/reg_xgb.pkl')
-submission(reg_xgb,predic_test,'./Data/reg_xgb_predict.csv')
+clf_vc=joblib.load('./Model/clf_vc.pkl')
+submission(clf_vc,predic_test,'./Data/clf_vc_predict.csv')
 
 
 
