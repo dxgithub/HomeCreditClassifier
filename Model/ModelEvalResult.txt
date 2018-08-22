@@ -1,0 +1,6 @@
+Calssifcation error of clf_knn: 0.88
+Calssifcation error of clf_rfc1: 0.88
+Calssifcation error of clf_lg1: 0.88
+Calssifcation error of clf_svr: 0.88
+Calssifcation error of clf_xgb1: 0.88
+Calssifcation error of clf_vc: 0.88
