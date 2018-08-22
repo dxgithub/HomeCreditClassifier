@@ -29,8 +29,8 @@ from sklearn.externals import joblib
 
 code_test_data=trainData[:100]
 
-X = code_test_data.drop(['SK_ID_CURR','TARGET'], axis=1)
-y = pd.DataFrame(code_test_data['TARGET'])
+X = trainData.drop(['SK_ID_CURR','TARGET'], axis=1)
+y = pd.DataFrame(trainData['TARGET'])
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
 
